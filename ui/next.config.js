@@ -18,6 +18,22 @@ const nextConfig = {
       {
         source: '/(.*)',
         headers: [
+          // {
+          //   key: 'Access-Control-Allow-Private-Network',
+          //   value: "true",
+          // },
+          // {
+          //   key: 'Access-Control-Allow-Origin',
+          //   value: '*',
+          // },
+          // {
+          //   key: 'Access-Control-Allow-Methods',
+          //   value: 'GET',
+          // },
+          {
+            key: 'Cross-Origin-Resource-Policy',
+            value: 'same-site',
+          },
           {
             key: 'Cross-Origin-Opener-Policy',
             value: 'same-origin',
